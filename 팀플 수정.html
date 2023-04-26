@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+        
+        <style>
+            * {
+                font-family: 'East Sea Dokdo', cursive;
+            }
+
+            .main_logo{
+                display: inline-block;
+                font-size: 30px;
+                padding: 0px 500px 0px 20px;
+                height: 40px;
+            }
+
+            ul{
+                list-style-type: none;
+                color: white;
+                background-color: #C12231;
+            }
+
+            li{
+                display: inline;
+                font-size: 20px;
+                padding: 0px 100px;
+            }
+
+            article#image {
+                float: left;
+                display: inline;
+                background-color: red;
+                color: white;
+
+                width: 40%;
+                height: 300px;
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-top: 5%;
+                
+            }
+
+            article#menu {
+                float: right;
+                display: inline;
+                background-color: red;
+                color: white;
+                width: 40%;
+                height: 300px;
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-top: 5%;
+                
+            }
+            
+            .preview_bottom {
+                margin-top: 20px;
+                display: block;
+                border: 1px solid black;
+            }
+            .preview_bottom div{
+                border: 1px solid black;
+                text-align: center;
+                display: inline-block;
+                margin-left: 100px;
+                width: 25%;
+                height: 100px;
+            }
+            .preview_top{
+                border: 1px solid black;
+            }
+            .preview_top article{
+                margin-left: 25%;
+                display: inline-block;
+                border: 1px solid black;
+                width: 200px;
+                height: 200px;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <ul class="nav_contents">
+            <h1 class="main_logo">한 슐 랭</h1>
+            <li>소개</li>
+            <li>카테고리</li>
+            <li>추천맛집</li>
+        </ul>
+        <section class="preview_top">
+            <article class="preview_image">
+                사진<img onmouseover="this.style.width='500px'" onmouseout="this.style.width='50%'"src="./뚱이.png"width="70%" height="70%">
+            </article>
+            <article class="preview_menu">
+                메뉴<img onmouseover="this.style.width='500px'" onmouseout="this.style.width='50%'"src="./뚱이.png"width="70%" height="70%">
+            </article>
+        </section>
+        <div class="preview_bottom">
+            <div class="preview_map">지도</div>
+            <div class="preview_review">리뷰</div>
+            <div class="preview_info">정보</div>
+        </div>
+    </body>
+</html>
