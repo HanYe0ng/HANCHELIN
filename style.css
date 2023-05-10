@@ -1,37 +1,131 @@
 *{
     font-family: 'East Sea Dokdo', cursive;
 }
-.main_logo{
+.nav_container{
+    height: 100px;
+    display: flex;
+    color: white;
+    background-color: #C12231;
+}
+.logo_image{
+    height: 95%;
+    object-fit: contain;
+    align-items: center;
+}
+.hanchelin{
     display: inline-block;
-    font-size: 30px;
-    padding: 0px 600px 0px 20px;
-    height: 40px;
+    font-size: 50px;
 }
-ul{
-  list-style-type: none;
-  color: white;
-  background-color: #C12231;
-}
-li{
-  display: inline;
-  font-size: 20px;
-  padding: 0px 100px;
-}
-.menu_image{
-    border: 1px solid black;
-    display: block;
-}
-div figure{
-    display: inline-block;
-    border: 1px solid black;
-    width: 200px;
-    height: 250px;
-}
-div figure figcaption{
-    font-size: 20px;
+.menu_title{
     text-align: center;
 }
-div figure span img{
-    width: 200px;
+.menu_info{
+    text-align: center;
+}
+.nav_box1{
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+.nav_box2{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    width: 80%;
+}
+.nav_contents{
+    font-size: 20px;
+    padding: 20px 80px 0px 80px;
+}
+.info_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 200px;
+}
+.menu_title{
+    font-size: 40px;
+    padding-bottom: 0px;
+}
+.menu_info{
+    font-size: 20px;
+}
+
+.menu_container{
+    display: flex;
+    justify-content: center;
+}
+.menu_container .menu_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    height: 1500px;
+    background-image: url(/images/menu_back3.jpg);
+}
+.menu_container .menu_box .menu_image{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 400px;
+    margin: 10px;
+    border: 1px solid black;
+}
+.menu_container .menu_box .menu_image .image{
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+}
+.menu_container .menu_box .menu_image .image .menu{
+    width: 100%;
+}
+.menu_container .menu_box .menu9_image{
+    display: flex;
+    justify-content: flex-start;
+    height: 200px;
+    width: 820px;
+    margin: 10px;
+    border: 1px solid black;
+}
+.menu_container .menu_box .menu9_image .image{
+    overflow: hidden;
+    width: 25%;
+    height: 100%;
+}
+.menu_container .menu_box .menu9_image .image .menu{
+    width: 100%;
+}
+.menu_container .menu_box .menu_image .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background-image: url(/images/menu_back1.jpg);
+}
+.menu_container .menu_box .menu_image .info .food_name{
+    font-size: 30px;
+}
+.menu_container .menu_box .menu_image .info .food_info{
+    font-size: 15px;
+}
+.menu_container .menu_box .menu_image .info .price{
+    font-size: 20px;
+}
+.menu_container .menu_box .menu9_image .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    height: 100%;
+    background-image: url(/images/menu_back1.jpg);
+}
+.menu_container .menu_box .menu9_image .info .food_name{
+    font-size: 30px;
+}
+.menu_container .menu_box .menu9_image .info .food_info{
+    font-size: 15px;
+}
+.menu_container .menu_box .menu9_image .info .price{
+    font-size: 20px;
 }
