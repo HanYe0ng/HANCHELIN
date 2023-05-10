@@ -74,12 +74,33 @@
                 border-radius: 100px;
                 background-color: #FFF2CC;
                 color: black;}
-        </style>
+                
+            .bar{text-decoration: none;
+            color: white;}
 
+            .first{
+                background-color: white;
+                color: black;
+                display: none;
+            }
+
+            #intro:hover + .first{display: block;}
+
+            
+                
+        </style>
+        
     </head>
     <body>
         <h1> 한 슐 랭</h1>
-        <p>소개&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;카테고리&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;추천맛집</p>
-        <p id="korea">한식</p><p id="japan">일식</p><p id="us">양식</p><p id="china">중식</p><p id="drink">주점</p>  
+        <p><a href="#" class="bar" id="intro">소개&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="#" class="bar" id="category">카테고리&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="#" class="bar" id="recommend"> 추천맛집</a></p>
+        <p class="first">이것은 김밥인가 초밥인가 피자인가 마라탕인가 소주인가?</p> <!--아니 왜 마우스 올리면 나타나지가 않는 거지? 낼 해결해야겟다-->
+        <p id="korea">한식</p>
+        <p id="japan">일식</p>
+        <p id="us">양식</p>
+        <p id="china">중식</p>
+        <p id="drink">주점</p>  
     </body>
 </html>
