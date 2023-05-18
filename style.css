@@ -140,3 +140,70 @@
     background-image: none;
     font-size: 20px;
 }
+
+/*selection페이지 스타일*/
+
+.sub_title{
+    background-image: none;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 0px;
+}
+.selection_container{
+    display: flex;
+    justify-content: center;
+}
+.selection_container .selection_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    height: 1000px;
+    background-image: url(/images/menu_back3.jpg);
+}
+.selection_container .selection_box .selection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 250px;
+    margin: 10px;
+    border: 1px solid black;
+}
+.selection_container .selection_box .selection .image{
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+}
+.selection_container .selection_box .selection .image .res{
+    width: 100%;
+}
+.selection_container .selection_box .selection .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background-image: url(/images/menu_back1.jpg);
+}
+.selection_container .selection_box .selection .info .res_name{
+    background-image: none;
+    font-size: 30px;
+}
+.selection_container .selecton_box .selection .info .review{
+    background-image: none;
+    font-size: 15px;
+}
+.selection_container .selecton_box .selection .info .review .star_image{
+    width: 8px;
+    align-items: center;
+}
+.selection_container .selecton_box .selection .info .review .star_num{
+    background-image: none;
+    display: inline-block;
+    font-size: 10px;
+}
+.selection_container .selection_box .selection .info .price{
+    background-image: none;
+    font-size: 20px;
+}
