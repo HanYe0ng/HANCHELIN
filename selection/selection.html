@@ -6,44 +6,47 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     
   <style>
-    body{
-        background-image: url("main_back.jpg");
+    body {
+      background-image: url("main_back.jpg");
     }
        
-    .navbar{
+    .navbar {
       margin-bottom: 50px;
       border-radius: 0;
       background-color: #F20F22; 
     }
 
-    .jumbotron{
+    .navbar-nav > li > a {
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+
+    .jumbotron {
       margin-bottom: 0;
     }
    
-    footer{
+    footer {
       background-color: #f2f2f2;
       padding: 25px;
     }
 
-    .img-responsive{
-      transition: transform 0.4s;
-    }
 
-    .img-responsive:hover{
-      transform: scale(1.05);
+
+    .img-responsive:hover {
+      transform: scale(1.05); /* Increased scale on hover */
     }
   </style>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function(){
+    document.addEventListener('DOMContentLoaded', function() {
       var images = document.getElementsByClassName('img-responsive');
 
-      for (var i = 0; i < images.length; i++){
-        images[i].addEventListener('click', function(){
+      for (var i = 0; i < images.length; i++) {
+        images[i].addEventListener('click', function() {
           var nextPage = '';
 
           // Map the clicked image to the respective page URL
-          switch (this.getAttribute('id')){
+          switch (this.getAttribute('id')) {
             case 'image1':
               nextPage = 'page_1.html';
               break;
@@ -63,7 +66,7 @@
               nextPage = 'page_6.html';
               break;
             default:
-              nextPage = 'default.html'; 
+              nextPage = 'default.html'; // Default page URL in case no match is found
           }
 
           window.location.href = nextPage;
@@ -153,5 +156,6 @@
     </div>
   </div>
 </div>
+
 </body>
 </html>
