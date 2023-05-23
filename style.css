@@ -320,6 +320,12 @@ a{
     background-color: white;
     height: 100%;
 }
+.res_menu_box{
+    background-image: none;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+}
 #res_menu_image{
     background-image: none;
     background-color: white;
