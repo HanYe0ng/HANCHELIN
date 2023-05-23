@@ -2,6 +2,12 @@
     font-family: 'East Sea Dokdo', cursive;
     background-image: url(/images/main_back.jpg);
 }
+a{
+    text-decoration: none;
+    background-image: none;
+    background-color: #C12231;
+    color: white;
+}
 .nav_container{
     border: 1px solid #c95c5c;
     height: 100px;
@@ -11,9 +17,13 @@
     background-color: #C12231;
 }
 .logo_image{
-    height: 95%;
+    height: 100%;
     object-fit: contain;
     align-items: center;
+}
+.logo_image_box{
+    height: 100px;
+    width: 100px;
 }
 .hanchelin{
     background-image: none;

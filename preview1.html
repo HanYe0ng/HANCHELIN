@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<<<<<<< HEAD
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="menu_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav_container">
+        <div class="nav_box1">
+            <img class="logo_image" src="/images/star.png" alt="logo">
+            <div class="hanchelin">한 슐 랭</div>
+        </div>
+        <ul class="nav_box2">
+            <li><a class="nav_contents" href="intro.html">소개</a></li>
+            <li id="ctg">
+                <a class="nav_contents" href="#">카테고리</a>
+                <ul class="dropdown_ctg">
+                    <li><a class="dropdown_contents" href="#">한식</a></li>
+                    <li><a class="dropdown_contents" href="#">양식</a></li>
+                    <li><a class="dropdown_contents" href="#">일식</a></li>
+                    <li><a class="dropdown_contents" href="#">중식</a></li>
+                    <li><a class="dropdown_contents" href="#">주점</a></li>
+                </ul>
+            </li>
+            <li><a class="nav_contents" href="recommend.html">추천맛집</a></li>
+        </ul>
+    </div>
+
+    <div class="infomenu_container">
+        <div class="res_image">
+            <div class="res_image_head">
+                매장 사진
+            </div>
+            <div class="res_image_item">
+                <div class="res_image_frame">
+                    <img id="res_image" src="/images/gd.jpeg" alt="res_image">
+                </div>
+            </div>
+        </div>
+        <div class="res_menu">
+            <div class="res_menu_head">
+                메뉴
+            </div>
+            <div class="res_menu_icon">
+                <div class="res_menu_frame">
+                    <img id="res_menu_image" src="/images/res_menu.png" alt="menu_icon">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="map_container">
+        <div class="map_head">
+            찾아가는 길
+        </div>
+        <div class="map_box">
+            <div class="map_item">
+            </div>
+        </div>
+    </div>
+    <div class="res_info_container">
+        <div class="res_info_head">
+            리뷰
+        </div>
+        <div class="review_box">
+            <div class="res_info_star">
+                <img id="stars" src="/images/star1.png" alt="stars">
+            </div>
+            <div class="res_info_reviewnum">
+                4.9
+            </div>
+        </div>
+        <div class="res_info">
+            <div class="res_info_head">
+                정보
+            </div>
+            <div class="res_info_items">
+                <p>email@gmail.com</p>
+                <p>010-1111-2222</p>
+            </div>
+        </div>
+    </div>
+</body>
+=======
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+        <style>
+            * {
+                font-family: 'East Sea Dokdo', cursive;
+            }
+
+            .main_logo{
+                display: inline-block;
+                font-size: 30px;
+                padding: 0px 500px 0px 20px;
+                height: 40px;
+            }
+
+            ul{
+                list-style-type: none;
+                color: white;
+                background-color: #C12231;
+            }
+
+            li{
+                display: inline;
+                font-size: 20px;
+                padding: 0px 100px;
+            }
+
+            article#image {
+                float: left;
+                display: inline;
+                background-color: red;
+                color: white;
+
+                width: 40%;
+                height: 300px;
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-top: 5%;
+                
+            }
+
+            article#menu {
+                float: right;
+                display: inline;
+                background-color: red;
+                color: white;
+                width: 40%;
+                height: 300px;
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-top: 5%;
+                
+            }
+            
+            .preview_bottom {
+                margin-top: 20px;
+                display: block;
+                border: 1px solid black;
+                
+            }
+            .preview_bottom div{
+                border: 1px solid black;
+                text-align: center;
+                display: inline-block;
+                margin-top: 30px;
+                margin-left: 100px;
+                width: 25%;
+                height: 100px;
+            }
+            .preview_top{
+                border: 1px solid black;
+            }
+            .preview_top article{
+                margin-left: 25%;
+                display: inline-block;
+                border: 1px solid black;
+                width: 200px;
+                height: 200px;
+            }
+            .image{
+            width:100%;
+            height:200px;
+
+            }
+            .image:hover{
+            align-content: center;
+            transform: scale(2);
+            }
+            .preview_info{
+               margin-top: 20px;
+               position: relative;
+               top: 59px;
+            }
+    
+           
+        </style>
+    </head>
+    <body>
+        <ul class="nav_contents">
+            <h1 class="main_logo"><a href="index.html">한 슐 랭</a></h1>
+            <li>소개</li>
+            <li>카테고리</li>
+            <li>추천맛집</li>
+        </ul>
+        <section class="preview_top">
+            <article class="preview_image">
+                사진<img class="image" src="./images/닭한마리.png">
+            </article>
+            <article class="preview_menu">
+                메뉴<a href="menu.html"><img class="image" src="./images/닭한마리1.png"></a>
+            </article>
+        </section>
+        <div class="preview_bottom">
+            <div class="preview_map"><a href="https://map.naver.com/v5/entry/place/13526656?c=15,0,0,0,dh"target="_self">지도</a></div>
+            <div class="preview_review"><a href="https://billion-duck.tistory.com/entry/2-%EB%B3%B8%EA%B0%80-%EB%8B%AD%ED%95%9C%EB%A7%88%EB%A6%AC-%EC%96%BC%ED%81%B0%ED%95%9C-%EB%8B%AD%ED%95%9C%EB%A7%88%EB%A6%AC-%EB%A7%9B%EC%A7%91-%EC%B6%A9%EB%AC%B4%EB%A1%9C%EC%97%AD-%EC%9D%84%EC%A7%80%EB%A1%9C3%EA%B0%80%EC%97%AD-%EB%AA%85%EB%8F%99" target="_blank">리뷰</a></div>
+            <div class="preview_info"><a>정보</br>02-2274-2986</br>서울 중구 마른내로2길 19</br>평일 11:30~23:00 일요일 휴무</a></div>
+        </div>
+    </body>
+>>>>>>> 0dce9ba30aa6651b536a9ba3243846b82e723d4f
+</html>
