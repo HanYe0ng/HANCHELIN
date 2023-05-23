@@ -2,7 +2,14 @@
     font-family: 'East Sea Dokdo', cursive;
     background-image: url(/images/main_back.jpg);
 }
+a{
+    text-decoration: none;
+    background-image: none;
+    background-color: #C12231;
+    color: white;
+}
 .nav_container{
+    border: 1px solid #c95c5c;
     height: 100px;
     display: flex;
     color: white;
@@ -10,9 +17,13 @@
     background-color: #C12231;
 }
 .logo_image{
-    height: 95%;
+    height: 100%;
     object-fit: contain;
     align-items: center;
+}
+.logo_image_box{
+    height: 100px;
+    width: 100px;
 }
 .hanchelin{
     background-image: none;
@@ -38,18 +49,53 @@
 }
 .nav_box2{
     background-image: none;
+    background-color: #C12231;
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
     width: 80%;
 }
 .nav_contents{
+    border-left: 1px solid #c95c5c;
     background-image: none;
+    background-color: #C12231;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    height: 80%;
+    text-decoration: none;
+    font-size: 20px;
+    width: 100px;
     font-size: 20px;
     padding: 20px 80px 0px 80px;
 }
+.dropdown_ctg{
+    display: none;
+    padding-left: 0;
+    background-image: none;
+    background-color: #C12231;
+    list-style-type: none;
+    position: inherit;
+    position: relative;
+}
+.dropdown_contents{
+    padding: 10px 0px;
+    border-top: 1px solid #c95c5c;
+}
+.dropdown_ctg a{
+    background-image: none;
+    background-color: #C12231;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: block;
+}
+#ctg:hover .dropdown_ctg{
+    display: block;
+}
+
 .info_container{
-    border: 1px solid black;
     background-image: none;
     display: flex;
     flex-direction: column;
@@ -139,4 +185,231 @@
 .menu_container .menu_box .menu9_image .info .price{
     background-image: none;
     font-size: 20px;
+}
+
+/* intro페이지 디자인 */
+.intro_page{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    color: white;
+    letter-spacing: 0.5em;
+    opacity: 1;
+}
+.intro_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 1000px;
+    width: 80%;
+    background-image: none;
+    background-color: #381E0D;
+}
+.intro_box{
+    background-image: none;
+    background-color: #381E0D;
+    height: 400px;
+}
+.intro_head{
+    background-image: none;
+    background-color: #381E0D;
+    font-size: 60px;
+}
+.intro_item{
+    background-image: none;
+    background-color: #381E0D;
+    padding-top: 25px;
+    font-size: 40px;
+}
+.producer{
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-image: none;
+    background-color: #381E0D;
+}
+.producer_head{
+    background-image: none;
+    background-color: #381E0D;
+    font-size: 60px;
+    width: 100%;
+    height: 75px;
+}
+.name{
+    background-image: none;
+    background-color: #381E0D;
+    list-style: none;
+    font-size: 40px;
+}
+.email{
+    background-image: none;
+    background-color: #381E0D;
+    list-style: none;
+    font-size: 40px;
+}
+
+/* preview페이지 css */
+.infomenu_container{
+    background-image: none;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}
+.res_image{
+    background-image: none;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+}
+.res_image_head{
+    background-image: none;
+    background-color: white;
+    font-size: 40px;
+    height: 50px;
+    text-align: center;
+}
+.res_image_item{
+    background-image: none;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+.res_image_frame{
+    background-image: none;
+    background-color: white;
+    height: 100%;
+    width: 300px;
+}
+.res_image_frame #res_image{
+    background-image: none;
+    background-color: white;
+    height: 100%;
+}
+.res_menu{
+    border-left: 1px solid black;
+    background-image: none;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+}
+.res_menu_head{ 
+    background-image: none;
+    background-color: white;
+    font-size: 40px;
+    height: 50px;
+    text-align: center;
+}
+.res_menu_icon{
+    background-image: none;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+.res_menu_frame{
+    background-image: none;
+    background-color: white;
+    height: 100%;
+}
+#res_menu_image{
+    background-image: none;
+    background-color: white;
+    height: 100%;
+}
+.map_container{
+    background-image: none;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+}
+.map_head{
+    background-image: none;
+    background-color: white;
+    font-size: 40px;
+    height: 50px;
+    text-align: center;
+}
+.map_box{
+    background-image: none;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    height: 440px;
+}
+.map_item{
+    background-image: none;
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+}
+.res_info_container{
+    background-image: none;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.res_info_head{
+    background-image: none;
+    background-color: white;
+    font-size: 40px;
+    height: 50px;
+    text-align: center;
+}
+.review_box{
+    background-image: none;
+    background-color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.res_info_star{
+    width: 20px;
+    height: 20px;
+}
+#stars{
+    background-image: none;
+    background-color: white;
+    height: 100%;
+}
+.res_info_reviewnum{
+    background-image: none;
+    background-color: white;
+    font-size: 20px;
+}
+.res_info{
+    background-image: none;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.res_info_head{
+    background-image: none;
+    background-color: white;
+    font-size: 40px;
+    height: 50px;
+    text-align: center;
+}
+.res_info_items{
+    background-image: none;
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.res_info_items > p{
+    background-image: none;
+    background-color: white;
 }
