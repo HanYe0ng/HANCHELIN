@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
   <style>
     body{
-        background-image: url("main_back.jpg");
+      background-image: url("/images/_etc/main_back.jpg");
     }
        
     .navbar{
@@ -18,6 +18,7 @@
 
     .jumbotron{
       margin-bottom: 0;
+      background-color: #F20F22; 
     }
    
     footer{
@@ -32,6 +33,26 @@
     .img-responsive:hover{
       transform: scale(1.05);
     }
+
+    .panel-heading{
+      background-color: #F20F22;
+      color: #f2f2f2;
+    }
+
+    .background-box{
+      background-color: #FFF;
+      border: 5px solid #87CCFA; 
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 1250px;
+      margin-left: 130px;
+      margin-bottom: 65px;
+    }
+
+    .li{
+      color: black;
+    }
   </style>
 
   <script>
@@ -42,7 +63,6 @@
         images[i].addEventListener('click', function(){
           var nextPage = '';
 
-          // Map the clicked image to the respective page URL
           switch (this.getAttribute('id')){
             case 'image1':
               nextPage = 'page_1.html';
@@ -72,85 +92,89 @@
     });
   </script>
 </head>
+
 <body>
-  <div class="jumbotron">
-    <div class="container text-center">
-      <h1 style="color: #f2f2f2">한 슐 랭</h1>     
-    </div>
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1 style="color: #f2f2f2">한 슐 랭</h1>     
   </div>
-  
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-        </button>
-        <a class="navbar-brand" href="#">Logo</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="selection_koreanfood.html">한식</a></li>
-          <li><a href="selection_westernfood.html">양식</a></li>
-          <li><a href="selection_japanesefood.html">일식</a></li>
-          <li><a href="selection_chinesefood.html">중식</a></li>
-          <li><a href="selection_pub.html">주점</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+</div>
 
-<div class="container">    
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="panel panel-primary">
-        <div class="panel-heading">A</div>
-        <div class="panel-body"><img id="image1" src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">영업 여부:<br>평점:<br>리뷰 수:</div>
-      </div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
     </div>
-    <div class="col-sm-4"> 
-      <div class="panel panel-primary">
-        <div class="panel-heading">B</div>
-        <div class="panel-body"><img id="image2" src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">영업 여부:<br>평점:<br>리뷰 수:</div>
-      </div>
-    </div>
-    <div class="col-sm-4"> 
-      <div class="panel panel-primary">
-        <div class="panel-heading">C</div>
-        <div class="panel-body"><img id="image3" src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">영업 여부:<br>평점:<br>리뷰 수:</div>
-      </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="selection_koreanfood.html">한식</a></li>
+        <li><a href="selection_westernfood.html">양식</a></li>
+        <li><a href="selection_japanesefood.html">일식</a></li>
+        <li><a href="selection_chinesefood.html">중식</a></li>
+        <li><a href="selection_pub.html">주점</a></li>
+      </ul>
     </div>
   </div>
-</div><br>
+</nav>
 
-<div class="container">    
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="panel panel-primary">
-        <div class="panel-heading">D</div>
-        <div class="panel-body"><img id="image4" src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">영업 여부:<br>평점:<br>리뷰 수:</div>
+<div class="background-box">
+  <div class="container">    
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="panel">
+          <div class="panel-heading">용용선생</div>
+          <div class="panel-body"><img id="image1" src="/images/pub/용용선생/용용선생 외부.jpeg" class="img-responsive" style="width:320px; height:300px;" alt="Image"></div>
+          <div class="panel-footer">평점: 4.7<br><br>리뷰 수: 827</div>
+        </div>
+      </div>
+      <div class="col-sm-4"> 
+        <div class="panel">
+          <div class="panel-heading">대동집</div>
+          <div class="panel-body"><img id="image2" src="/images/pub/대동집/대동집 외부.jpeg" class="img-responsive" style="width:320px; height:300px;" alt="Image"></div>
+          <div class="panel-footer">평점: 4.59<br><br>리뷰 수: 248</div>
+        </div>
+      </div>
+      <div class="col-sm-4"> 
+        <div class="panel">
+          <div class="panel-heading">수컷웅 하이볼</div>
+          <div class="panel-body"><img id="image3" src="/images/pub/수컷웅 하이볼/수컷웅 하이볼 외부.jpeg" class="img-responsive" style="width:320px; height:300px;" alt="Image"></div>
+          <div class="panel-footer">평점: 4.5<br><br>리뷰 수: 543</div>
+        </div>
       </div>
     </div>
-    <div class="col-sm-4"> 
-      <div class="panel panel-primary">
-        <div class="panel-heading">E</div>
-        <div class="panel-body"><img id="image5" src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">영업 여부:<br>평점:<br>리뷰 수:</div>
+  </div><br>
+
+  <div class="container">    
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="panel">
+          <div class="panel-heading">콰이</div>
+          <div class="panel-body"><img id="image4" src="/images/pub/콰이/콰이 외부.jpeg" class="img-responsive" style="width:320px; height:300px;" alt="Image"></div>
+          <div class="panel-footer">평점: 4.6<br><br>리뷰 수: 305</div>
+        </div>
       </div>
-    </div>
-    <div class="col-sm-4"> 
-      <div class="panel panel-primary">
-        <div class="panel-heading">F</div>
-        <div class="panel-body"><img id="image6" src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">영업 여부:<br>평점:<br>리뷰 수:</div>
+      <div class="col-sm-4"> 
+        <div class="panel">
+          <div class="panel-heading">갱생</div>
+          <div class="panel-body"><img id="image5" src="/images/pub/갱생/갱생 외부.jpeg" class="img-responsive" style="width:320px; height:300px;" alt="Image"></div>
+          <div class="panel-footer">평점: 4.87<br><br>리뷰 수: 2119</div>
+        </div>
+      </div>
+      <div class="col-sm-4"> 
+        <div class="panel">
+          <div class="panel-heading">달포차</div>
+          <div class="panel-body"><img id="image6" src="/images/pub/달포차/달포차 외부.jpeg"class="img-responsive" style="width:320px; height:300px;" alt="Image"></div>
+          <div class="panel-footer">평점: 4.34<br><br>리뷰 수: 318</div>
+        </div>
       </div>
     </div>
   </div>
+</div>
 </div>
 </body>
 </html>
