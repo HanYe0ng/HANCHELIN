@@ -1,6 +1,6 @@
 *{
     font-family: 'East Sea Dokdo', cursive;
-    background-image: url(/images/main_back.jpg);
+    background-image: url(/images/_etc/main_back.jpg);
 }
 a{
     text-decoration: none;
@@ -112,7 +112,7 @@ a{
     justify-content: center;
     width: 70%;
     height: 1500px;
-    background-image: url(/images/menu_back3.jpg);
+    background-image: url(/images/_etc/menu_back3.jpg);
 }
 .menu_container .menu_box .menu_image{
     display: flex;
@@ -121,13 +121,22 @@ a{
     width: 400px;
     margin: 10px;
     border: 1px solid black;
+    background-image: none;
+    background-color: white;
 }
 .menu_container .menu_box .menu_image .image{
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 50%;
     height: 100%;
+    background-image: none;
+    background-color: white;
 }
 .menu_container .menu_box .menu_image .image .menu{
+    background-image: none;
+    background-color: white;
     width: 100%;
 }
 .menu_container .menu_box .menu9_image{
@@ -137,13 +146,22 @@ a{
     width: 820px;
     margin: 10px;
     border: 1px solid black;
+    background-image: none;
+    background-color: white;
 }
 .menu_container .menu_box .menu9_image .image{
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 25%;
     height: 100%;
+    background-image: none;
+    background-color: white;
 }
 .menu_container .menu_box .menu9_image .image .menu{
+    background-image: none;
+    background-color: white;
     width: 100%;
 }
 .menu_container .menu_box .menu_image .info{
