@@ -1,148 +1,180 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        *{padding:0; margin:0;}
-        li{list-style:none; color: white}
-        a{text-decoration:none; font-size:26px;}
-        header{
-            background-color: #F20F22;
-            height: 67px;
-            font-family: 'East Sea Dokdo', cursive;
-            font-size: 25px;
-            padding-bottom: 20px;
-        }
-        .menu{
-            float: right;
-            margin-bottom: 18px;
-            font-size: 30px;
-            padding: 0px 50px 0px 50px; 
-            height: 40px;
-        }
-        .submenu {
-            height: 0;
-            overflow: hidden;
-            position:relative; 
-            z-index:2;
-        }
-        .menu > li:hover {
-            transition-duration: 0.5s;
-        }
-        .menu > li:hover .submenu {
-            height: 250px; 
-            transition-duration: 1s;
-        }
-        .main_logo{
-            color: white;   
-            float: left;
-            margin-bottom: 18px;
-            font-size: 30px;
-            padding: 0px 50px 0px 50px; 
-            height: 40px;
-        }
-        nav{
-            background-color: #F20F22;
-            width: 75%;
-            height: 80px;
-            margin-top: 25px;
-            float: right;
-            overflow: hidden;zoom: 1;
-            position:relative;z-index:1;
-        }
-        .b{
-            color: white;   
-            text-align: center;
-            padding-top: 25px;
-            margin-bottom: 25px;
-            font-family: 'East Sea Dokdo', cursive;
-            font-size: 25px;
-        }
-        aside{
-            background-color: #F20F22;
-            width: 20%;
-            height: 280px;
-            margin-top: 120px;
-            padding-left: 20px;
-            float: left;
-            color: white;
-        }
-        article{
-            background-color: #F20F22;
-            width: 75%;
-            height: 280px;
-            margin-top: 15px;
-            float: right;
-        }
-        article .contents{
-            display: inline-block;
-            border: 1px solid black;
-            width: 40%;
-            height: 80%;
-            margin-left: 20px;
-            margin-top: 15px;
-            color: white;
-        }
-    </style>
-</head>
-<body>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     
-    <header>
-        <p class="main_logo"><br>한 슐 랭</p>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">  
-        <ul class="menu">
-            <li>
-              <a href="#"><br>더보기</a>
-              <ul class="submenu">
-                <li><a href="./selection/selection_koreanfood.html">한식</a></li>
-                <li><a href="./selection/selection_westernfood.html">양식</a></li>
-                <li><a href="./selection/selection_japanesefood.html">일식</a></li>
-                <li><a href="./selection/selection_chinesefood.html">중식</a></li>
-                <li><a href="./selection/selection_pub.html">주점</a></li>
-              </ul>
-            </li>
-        </ul>
-    </header>
-    <div>
-    <nav>
-        <div class="b">한식</div>
-    </nav>
+  <style>
+    body{
+      background-image: url("main_back.jpg");
+    }
+       
+    .navbar{
+      margin-bottom: 50px;
+      border-radius: 0;
+      background-color: #F20F22; 
+    }
+
+    .jumbotron{
+      margin-bottom: 0;
+      background-color: #F20F22; 
+    }
+   
+    footer{
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+    .img-responsive{
+      transition: transform 0.4s;
+    }
+
+    .img-responsive:hover{
+      transform: scale(1.05);
+    }
+
+    .panel-heading{
+      background-color: #F20F22;
+      color: #f2f2f2;
+    }
+
+    .background-box{
+      background-color: #FFF;
+      border: 5px solid #87CCFA; 
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 1250px;
+      margin-left: 130px;
+      margin-bottom: 65px;
+    }
+
+    .li{
+      color: black;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      var images = document.getElementsByClassName('img-responsive');
+
+      for (var i = 0; i < images.length; i++){
+        images[i].addEventListener('click', function(){
+          var nextPage = '';
+
+          switch (this.getAttribute('id')){
+            case 'image1':
+              nextPage = 'page_1.html';
+              break;
+            case 'image2':
+              nextPage = 'page_2.html';
+              break;
+            case 'image3':
+              nextPage = 'page_3.html';
+              break;
+            case 'image4':
+              nextPage = 'page_4.html';
+              break;
+            case 'image5':
+              nextPage = 'page_5.html';
+              break;
+            case 'image6':
+              nextPage = 'page_6.html';
+              break;
+            default:
+              nextPage = 'default.html'; 
+          }
+
+          window.location.href = nextPage;
+        });
+      }
+    });
+  </script>
+</head>
+
+<body>
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1 style="color: #f2f2f2">한 슐 랭</h1>     
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
     </div>
-    <div>
-    <aside>
-        <br>
-        <input type="checkbox" id="price"> 가격<br><br>
-        <input type="checkbox" id="2"> 위치<br><br>
-        <input type="checkbox" id="3"> 평점<br><br>
-        <input type="checkbox" id="price"> 포장<br><br>
-        <input type="checkbox" id="price"> 영업중<br><br>
-        <input type="checkbox" id="price"> 예약가능
-    </aside>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="selection_koreanfood.html">한식</a></li>
+        <li><a href="selection_westernfood.html">양식</a></li>
+        <li><a href="selection_japanesefood.html">일식</a></li>
+        <li><a href="selection_chinesefood.html">중식</a></li>
+        <li><a href="selection_pub.html">주점</a></li>
+      </ul>
     </div>
-    <span>
-    <article>
-        <div class="contents">
-            <span class="contents_img">
-                <p><a href="preview.html">사진</a></p>
-            </span>
-            <div class="contents_info">
-                <p>영업 여부</p>
-                <p>평점</p>
-                <p>리뷰 수</p>
-            </div>
+  </div>
+</nav>
+
+<div class="background-box">
+  <div class="container">    
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="panel">
+          <div class="panel-heading">A</div>
+          <div class="panel-body"><img id="image1" src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+          <div class="panel-footer">영업 여부:<br>평점:<br>리뷰 수:</div>
         </div>
-        <div class="contents">
-            <span class="contents_img">
-                <p>사진</p>
-            </span>
-            <div class="contents_info">
-                <p>영업 여부</p>
-                <p>평점</p>
-                <p>리뷰 수</p>
-            </div>
+      </div>
+      <div class="col-sm-4"> 
+        <div class="panel">
+          <div class="panel-heading">B</div>
+          <div class="panel-body"><img id="image2" src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+          <div class="panel-footer">영업 여부:<br>평점:<br>리뷰 수:</div>
         </div>
-    </article>
-    </span>
+      </div>
+      <div class="col-sm-4"> 
+        <div class="panel">
+          <div class="panel-heading">C</div>
+          <div class="panel-body"><img id="image3" src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+          <div class="panel-footer">영업 여부:<br>평점:<br>리뷰 수:</div>
+        </div>
+      </div>
+    </div>
+  </div><br>
+
+  <div class="container">    
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="panel">
+          <div class="panel-heading">D</div>
+          <div class="panel-body"><img id="image4" src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+          <div class="panel-footer">영업 여부:<br>평점:<br>리뷰 수:</div>
+        </div>
+      </div>
+      <div class="col-sm-4"> 
+        <div class="panel">
+          <div class="panel-heading">E</div>
+          <div class="panel-body"><img id="image5" src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+          <div class="panel-footer">영업 여부:<br>평점:<br>리뷰 수:</div>
+        </div>
+      </div>
+      <div class="col-sm-4"> 
+        <div class="panel">
+          <div class="panel-heading">F</div>
+          <div class="panel-body"><img id="image6" src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+          <div class="panel-footer">영업 여부:<br>평점:<br>리뷰 수:</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 </body>
 </html>
