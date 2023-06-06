@@ -102,6 +102,13 @@ a{
     justify-content: center;
     height: 200px;
 }
+.info_container .menu_title{
+    font-size: 50px;
+}
+.info_container .menu_info{
+    font-size: 30px;
+    letter-spacing: 1px;
+}
 .menu_container{
     display: flex;
     justify-content: center;
@@ -377,6 +384,14 @@ a{
     width: 50%;
     height: 100%;
     border: 1px solid black;
+}
+.map_item a{
+    background-image: none;
+    background-color: white;
+}
+.map_item img{
+    background-image: none;
+    background-color: white;
 }
 .res_info_container{
     background-image: none;
