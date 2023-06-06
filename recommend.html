@@ -1,34 +1,180 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+  <style>
+    body{
+      background-image: url("/images/_etc/main_back.jpg");
+    }
+       
+    .navbar{
+      margin-bottom: 50px;
+      border-radius: 0;
+      background-color: #F20F22; 
+    }
+
+    .jumbotron{
+      margin-bottom: 0;
+      background-color: #F20F22; 
+    }
+   
+    footer{
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+    .img-responsive{
+      transition: transform 0.4s;
+    }
+
+    .img-responsive:hover{
+      transform: scale(1.05);
+    }
+
+    .panel-heading{
+      background-color: #F20F22;
+      color: #f2f2f2;
+    }
+
+    .background-box{
+      background-color: #FFF;
+      border: 5px solid #87CCFA; 
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 1250px;
+      margin-left: 130px;
+      margin-bottom: 65px;
+    }
+
+    .li{
+      color: black;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      var images = document.getElementsByClassName('img-responsive');
+
+      for (var i = 0; i < images.length; i++){
+        images[i].addEventListener('click', function(){
+          var nextPage = '';
+
+          switch (this.getAttribute('id')){
+            case 'image1':
+              nextPage = '../menu/korean/고기를품다/menu_고기를품다.html';
+              break;
+            case 'image2':
+            nextPage = '../menu/chinese/매란방/menu_매란방.html';
+            break;
+            case 'image3':
+            nextPage = '../menu/japanese/스시도쿠/menu_스시도쿠.html';
+            break;
+            case 'image4':
+            nextPage = '../menu/western food/뺑드미/menu_뺑드미.html';
+            break;
+            case 'image5':
+            nextPage = '../menu/pub/콰이/menu_콰이.html';
+            break;
+            case 'image6':
+            nextPage = '../menu/japanese/스시도쿠카미동/menu_스시도쿠카미동.html';
+            break;
+            default:
+              nextPage = 'default.html'; 
+          }
+
+          window.location.href = nextPage;
+        });
+      }
+    });
+  </script>
 </head>
+
 <body>
-    <div class="nav_container">
-        <div class="nav_box1">
-            <a class="logo_image_box" href="index1.html">
-                <img class="logo_image" src="/images/star.png" alt="logo">
-            </a>
-                <div class="hanchelin"><a href="index.html">한 슐 랭</a></div>
-        </div>
-        <ul class="nav_box2">
-            <li><a class="nav_contents" href="intro.html">소개</a></li>
-            <li id="ctg">
-                <a class="nav_contents" href="#">카테고리</a>
-                <ul class="dropdown_ctg">
-                    <li><a class="dropdown_contents" href="/selection.html">한식</a></li>
-                    <li><a class="dropdown_contents" href="/selection.html">양식</a></li>
-                    <li><a class="dropdown_contents" href="/selection.html">일식</a></li>
-                    <li><a class="dropdown_contents" href="/selection.html">중식</a></li>
-                    <li><a class="dropdown_contents" href="/selection.html">주점</a></li>
-                </ul>
-            </li>
-            <li><a class="nav_contents" href="recommend.html">추천맛집</a></li>
-        </ul>
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1 style="color: #f2f2f2">한 슐 랭</h1>     
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">추천맛집</a>
     </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="selection/selection_koreanfood.html">한식</a></li>
+        <li><a href="selection/selection_westernfood.html">양식</a></li>
+        <li><a href="selection/selection_japanesefood.html">일식</a></li>
+        <li><a href="selection/selection_chinesefood.html">중식</a></li>
+        <li><a href="selection/selection_pub.html">주점</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="background-box">
+  <div class="container">    
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="panel">
+          <div class="panel-heading">고기를품다</div>
+          <div class="panel-body"><img id="image1" src="../images/korean/고기를품다/고기를품다 외부.jfif" class="img-responsive" style="width:320px; height:300px;" alt="Image"></div>
+          <div class="panel-footer">왕십리 소문난 고기집<br><br>특히 목살이 일품!</div>
+        </div>
+      </div>
+      <div class="col-sm-4"> 
+        <div class="panel">
+          <div class="panel-heading">매란방</div>
+          <div class="panel-body"><img id="image2" src="../images/chinese/매란방/매란방 외부.jpeg" class="img-responsive" style="width:320px; height:300px;" alt="Image"></div>
+          <div class="panel-footer">캐주얼 차이니즈 키친 매란방에서 다채롭고<br><br>감각적인 퓨전 중식요리의 향연을 느껴보세요</div>
+        </div>
+      </div>
+      <div class="col-sm-4"> 
+        <div class="panel">
+          <div class="panel-heading">스시도쿠</div>
+          <div class="panel-body"><img id="image3" src="../images/japanese/스시도쿠/스시도쿠 외부.jpeg" class="img-responsive" style="width:320px; height:300px;" alt="Image"></div>
+          <div class="panel-footer">왕십리 스시는 이곳에서</div>
+        </div>
+      </div>
+    </div>
+  </div><br>
+
+  <div class="container">    
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="panel">
+          <div class="panel-heading">뺑드미</div>
+          <div class="panel-body"><img id="image4" src="../images/western food/뺑드미/뺑드미 외부.jfif" class="img-responsive" style="width:320px; height:300px;" alt="Image"></div>
+          <div class="panel-footer">빵돌이 빵순이들 여기여기 모여라</div>
+        </div>
+      </div>
+      <div class="col-sm-4"> 
+        <div class="panel">
+          <div class="panel-heading">콰이</div>
+          <div class="panel-body"><img id="image5" src="../images/pub/콰이/콰이 외부.jpeg" class="img-responsive" style="width:320px; height:300px;" alt="Image"></div>
+          <div class="panel-footer">음식이 맛있어 가게 되는 술집</div>
+        </div>
+      </div>
+      <div class="col-sm-4"> 
+        <div class="panel">
+          <div class="panel-heading">스시도쿠카미동</div>
+          <div class="panel-body"><img id="image6" src="../images/japanese/스시도쿠카미동/스시도쿠카미동 외부.jpeg"class="img-responsive" style="width:320px; height:300px;" alt="Image"></div>
+          <div class="panel-footer">일식의 풍미가 느껴지는 집</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 </body>
 </html>
